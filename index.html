@@ -1,0 +1,75 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Cockpit 3.0</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			/*
+				Reset all active classes
+				and set active class from the parameter
+			*/
+			var toggleActiveClass = function(el) {
+				$(".cdx-sliderdot-link").removeClass("active");
+				el.toggleClass("active");
+			}
+
+
+			var myFunction = function(){
+
+				var active = $("a.active").attr("href");
+				console.log(active);
+
+				//next href
+				var sliderImage = $("#cdx-sliderimage");
+				
+				var nextEl = $("a.active").next();
+				if (!nextEl.length) {
+					nextEl = $(".cdx-sliderdot-link").first();
+				}
+				
+				var newHref = nextEl.attr("href");
+				sliderImage.fadeOut( 1000, function(){
+				 	sliderImage.attr("src",newHref);
+				 	sliderImage.fadeIn( 1000 );
+			 	});
+
+			 	toggleActiveClass(nextEl);
+			}
+
+			setInterval( myFunction ,6000);
+			
+
+			$(".cdx-sliderdot-link").click(function(event){
+				event.preventDefault();
+
+				var newHref = $(this).attr("href");
+
+				$("#cdx-sliderimage").fadeOut( 1000, function(){
+					$(this).attr("src",newHref);
+					$(this).fadeIn( 1000 );
+				});
+				
+				toggleActiveClass($(this));
+			});
+		});
+	</script>
+	<div id="cdx-content">
+		<h1>Cadaxo Cockpit 3.0</h1>
+		<div id="cdx-slider">
+			<img width="50%" id="cdx-sliderimage" src="images/01.jpg" />
+			<div id="cdx-navi-dots">
+				<a class="cdx-sliderdot-link active" href="images/01.jpg"><span class="cdx-sliderdot" ></span></a>
+				<a class="cdx-sliderdot-link" href="images/02.jpg"><span class="cdx-sliderdot"></span></a>
+				<a class="cdx-sliderdot-link" href="images/03.jpg"><span class="cdx-sliderdot"></span></a>
+				<a class="cdx-sliderdot-link" href="images/04.jpg"><span class="cdx-sliderdot"></span></a>
+				<a class="cdx-sliderdot-link" href="images/05.jpg"><span class="cdx-sliderdot"></span></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
