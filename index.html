@@ -7,17 +7,20 @@
 </head>
 <body>
 	<script type="text/javascript">
+
+		/*
+			Reset all active classes
+			and set active class from the parameter
+		*/
+		let toggleActiveClass = function(el) {
+			$(".cdx-sliderdot-link").removeClass("active");
+			el.toggleClass("active");
+		}
+
+		/*
+			Main Document ready function
+		*/
 		$(document).ready(function(){
-
-			/*
-				Reset all active classes
-				and set active class from the parameter
-			*/
-			var toggleActiveClass = function(el) {
-				$(".cdx-sliderdot-link").removeClass("active");
-				el.toggleClass("active");
-			}
-
 
 			var myFunction = function(){
 
@@ -61,7 +64,9 @@
 	<div id="cdx-content">
 		<h1>Cadaxo Cockpit 3.0</h1>
 		<div id="cdx-slider">
-			<img width="50%" id="cdx-sliderimage" src="images/01.jpg" />
+			<a href="http://www.cadaxo.com/" target="_blank">
+				<img width="50%" id="cdx-sliderimage" src="images/01.jpg" />
+			</a>
 			<div id="cdx-navi-dots">
 				<a class="cdx-sliderdot-link active" href="images/01.jpg"><span class="cdx-sliderdot" ></span></a>
 				<a class="cdx-sliderdot-link" href="images/02.jpg"><span class="cdx-sliderdot"></span></a>
