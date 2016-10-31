@@ -46,8 +46,41 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* Cadaxo Custom Style*/
+
+body {
+	background-color: #d1d1d1;
+	font-family:Questrial, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+        color: #424242;
+        font-family: Questrial;
+        font-size: 2em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 20px;
+        padding-top: 10px;
+}
+
+h2 {
+        color: #FFFFFF;
+        font-family: Questrial;
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 70px;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+        text-decoration: none;
+        color:#1cd333;
+        font-weight: 700;
+}
+
 #cdx-content {
 	margin:0 auto;
 	text-align: center;
@@ -57,8 +90,13 @@ table {
 	margin: 10px;
 }
 
+#cdx-slider {
+	padding-top: 12px;
+}
+
 .cdx-sliderdot{
 	display: inline-block;
+	margin: 0px 5px;
 	height: 20px;
 	width: 20px;
 	background-image: url('../images/slider-dot-not-active.png');
@@ -70,4 +108,42 @@ table {
 
 .active span, .active:hover span {
 	background-image: url('../images/slider-dot-active.png');
+}
+
+#cdx-sliderimage {
+	width: 25%;
+}
+
+#cdx-footer-logo {
+}
+
+#footer {
+	background-color: #272727;
+	color: #FFFFFF;
+	bottom: 0px;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#footer_left, #footer_center, #footer_right {
+	display: inline-block;
+	width: 33%;
+	line-height: 1.1em;
+}
+
+#footer_left{
+	text-align:left;
+    float:left;
+}
+
+#footer_right{
+	text-align:right;
+    float:right;
+    margin: 10px 5px;
+}
+
+.copyright {
+	font-size: 0.7em;
 }
