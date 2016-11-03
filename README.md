@@ -10,7 +10,7 @@ To run this yourself, do the following steps:
 
 1. Clone this repo with `git clone https://github.com/DusanSacha/cockpit-slider`
 
-2. Setup the dependencies with `npm run setup`
+2. Setup the dependencies with `npm install`
 
 3. Open 'index.html' in your favorite browser
 
