@@ -8,7 +8,7 @@ It was designed and optimized for [Cadaxo](http://www.cadaxo.com/) SQL Cockpit -
 
 To run this yourself, do the following steps:
 
-1. Clone this repo with `git clone https://github.com/DusanSacha/cockpit-slider
+1. Clone this repo with `git clone https://github.com/DusanSacha/cockpit-slider`
 
 2. Setup the dependencies with `npm run setup`
 
