@@ -129,7 +129,6 @@ a:visited {
 
 #footer_left, #footer_center, #footer_right {
 	display: inline-block;
-	width: 33%;
 	line-height: 1.1em;
 }
 
@@ -146,4 +145,8 @@ a:visited {
 
 .copyright {
 	font-size: 0.7em;
+}
+
+#footer_center {
+	text-align: center;
 }

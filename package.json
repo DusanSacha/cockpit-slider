@@ -1,0 +1,26 @@
+{
+  "name": "cockpit-slider",
+  "version": "1.0.0",
+  "description": "Cockpit Slider is a simple image slider for a website implemented in jquery.",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DusanSacha/cockpit-slider.git"
+  },
+  "keywords": [
+    "html",
+    "jquery",
+    "slider",
+    "website"
+  ],
+  "author": "Dusan Sacha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DusanSacha/cockpit-slider/issues"
+  },
+  "homepage": "https://github.com/DusanSacha/cockpit-slider#readme",
+  "dependencies": {
+    "jquery": "~1.12"
+  }
+}
